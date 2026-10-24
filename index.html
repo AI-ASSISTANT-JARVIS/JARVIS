@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b14">
+<meta name="description" content="JARVIS Learning Hub offers organised Physics, Mathematics and Chemistry resources for Class 10, Plus One, Plus Two, JEE, KEAM, CUET and other entrance exams.">
+<meta name="keywords" content="JARVIS learning hub, Class 10 Physics, Plus One Physics, Plus Two Physics, Mathematics, Chemistry, JEE, KEAM, CUET, study resources">
+<meta name="author" content="Yadu Krishna C.K.">
+<meta property="og:title" content="JARVIS | Your Intelligence. Your Advantage.">
+<meta property="og:description" content="Explore school and entrance-exam learning resources with JARVIS.">
+<meta property="og:type" content="website">
+<title>JARVIS | Your Intelligence. Your Advantage.</title>
+<style>
+:root{--bg:#080b14;--panel:#111827;--red:#ff304f;--blue:#42c8ff;--text:#f4f7ff;--muted:#9ba9c1;--line:#263247}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 10% 5%,#32101e 0,transparent 35%),radial-gradient(ellipse at 95% 18%,#092744 0,transparent 34%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;min-height:100vh}
+a{color:inherit;text-decoration:none}button{font:inherit}
+header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 6%;background:rgba(8,11,20,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
+.brand{display:flex;align-items:center;gap:10px;font-size:1.25rem;font-weight:900;letter-spacing:3px}.brand-mark{width:35px;height:35px;display:grid;place-items:center;border:2px solid var(--blue);border-radius:50%;color:var(--blue);box-shadow:0 0 15px #42c8ff55,inset 0 0 10px #42c8ff22;font-size:12px}.brand-name span{color:var(--red)}
+nav{display:flex;gap:10px;flex-wrap:wrap}nav button{background:transparent;border:0;color:var(--muted);padding:8px;cursor:pointer;font-size:.88rem}nav button:hover{color:var(--blue)}
+main{width:100%}.view{display:none;min-height:66vh}.view.active{display:block;animation:appear .25s ease}@keyframes appear{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.hero{position:relative;min-height:570px;display:flex;align-items:center;padding:72px 7%;overflow:hidden}.hero-content{position:relative;z-index:2;max-width:650px}.eyebrow{color:var(--blue);font-size:.75rem;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+h1{margin:18px 0;font-size:clamp(3.3rem,10vw,6.8rem);line-height:.95;letter-spacing:-4px}h1 .red{color:var(--red)}h1 .blue{color:var(--blue)}
+.hero p{max-width:490px;color:#bdc8da;font-size:1.05rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;border:1px solid #37465e;border-radius:8px;font-weight:750;font-size:.9rem;transition:.2s;cursor:pointer;color:var(--text);background:#111827}.btn-primary{background:linear-gradient(110deg,#ff304f,#d8173b);border-color:var(--red);box-shadow:0 0 22px #ff304f30}.btn-secondary{background:#111827;color:var(--blue);border-color:#42c8ff66}.btn:hover{transform:translateY(-2px);border-color:var(--blue)}
+.reactor-wrap{position:absolute;right:5%;top:50%;transform:translateY(-50%);width:min(35vw,340px);aspect-ratio:1;display:grid;place-items:center;opacity:.9}.reactor{width:72%;aspect-ratio:1;display:grid;place-items:center;border-radius:50%;border:2px solid var(--blue);background:radial-gradient(circle,#8ce8ff 0%,#159bd9 9%,#09233c 32%,#080b14 62%);box-shadow:0 0 18px var(--blue),0 0 65px #168bff88,inset 0 0 25px #42c8ff88;animation:pulse 3s ease-in-out infinite}.reactor:before,.reactor:after{content:"";position:absolute;width:94%;height:94%;border:1px solid #ff304f99;border-radius:50%;transform:rotate(35deg) scaleY(.65)}.reactor:after{width:110%;height:110%;border-color:#42c8ff88;transform:rotate(-35deg) scaleY(.65)}.reactor-core{width:22%;aspect-ratio:1;background:#e5fbff;border-radius:50%;box-shadow:0 0 18px #fff,0 0 45px var(--blue)}.bolt{position:absolute;width:2px;height:150%;background:linear-gradient(transparent,var(--red),var(--blue),transparent);transform:rotate(45deg);opacity:.45;filter:blur(1px)}@keyframes pulse{0%,100%{filter:brightness(.85)}50%{filter:brightness(1.25)}}
+.section{padding:55px 7%;scroll-margin-top:85px}.section-heading{margin-bottom:25px}.section-heading h2{margin:8px 0;font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.2}.section-heading p{color:var(--muted);max-width:760px}
+.content{padding:42px 7% 65px;max-width:1250px;margin:auto}.crumb{display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.9rem;margin-bottom:20px}.crumb button{border:0;background:none;color:var(--blue);padding:0;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{position:relative;overflow:hidden;text-align:left;width:100%;padding:23px 19px;background:linear-gradient(145deg,#151e2f,#0d111c);border:1px solid #2b394f;border-radius:14px;color:var(--text);transition:transform .2s,border-color .2s;cursor:pointer;min-height:170px}.card:before{content:"";position:absolute;top:0;left:0;height:2px;width:100%;background:linear-gradient(90deg,var(--red),var(--blue))}.card:hover{transform:translateY(-4px);border-color:var(--blue)}.subject-icon{font-size:2rem}.card h3{margin:10px 0 6px;font-size:1.12rem}.card p{margin:0;color:var(--muted);font-size:.9rem}.card .link-label{display:inline-block;margin-top:12px;color:var(--blue);font-size:.9rem;font-weight:750}
+.info-panel{padding:24px;background:linear-gradient(120deg,#25121f,#101c30);border:1px solid #563046;border-radius:14px}.info-panel p{color:#c0ccde}.resource-list{display:grid;gap:12px}.resource-item{padding:18px;border:1px solid #2b394f;background:#101827;border-radius:12px}.resource-item h3{margin:0 0 5px}.resource-item p{margin:0;color:var(--muted)}.tag{display:inline-block;color:var(--blue);font-size:.75rem;border:1px solid #42c8ff55;border-radius:99px;padding:3px 9px;margin:0 5px 5px 0}
+footer{padding:32px 7%;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:.9rem}footer strong{color:var(--blue)}footer .ceo{color:var(--text);font-weight:800;margin-top:12px}footer p{max-width:780px;margin:8px auto}
+@media(max-width:760px){header{align-items:flex-start;flex-direction:column}.hero{min-height:570px;padding:55px 6%;align-items:flex-start}.hero-content{margin-top:28px}.reactor-wrap{width:210px;right:-52px;top:auto;bottom:8px;transform:none;opacity:.35}h1{letter-spacing:-2px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.section,.content{padding:42px 6%}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.card{min-height:140px}.brand{font-size:1.05rem}.hero{min-height:590px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="#home" onclick="showPage('home');return false" aria-label="JARVIS home"><span class="brand-mark">J</span><span class="brand-name">JAR<span>VIS</span></span></a>
+<nav aria-label="Main navigation">
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('subjects')">Explore Resources</button>
+<button onclick="showPage('about')">About</button>
+</nav>
+</header>
+
+<main>
+<section class="view active" id="home">
+<div class="hero">
+<div class="hero-content">
+<div class="eyebrow">Your learning system · Online</div>
+<h1>THINK.<br><span class="red">LEARN.</span><br><span class="blue">RISE.</span></h1>
+<p>Your Intelligence. Your Advantage. Explore organised learning pathways for Class 10, Plus One, Plus Two, and entrance exams.</p>
+<div class="actions"><button class="btn btn-primary" onclick="showPage('subjects')">Explore Resources ↗</button><button class="btn btn-secondary" onclick="showPage('about')">Our Mission</button></div>
+</div>
+<div class="reactor-wrap" aria-hidden="true"><div class="bolt"></div><div class="reactor"><div class="reactor-core"></div></div></div>
+</div>
+<div class="section">
+<div class="section-heading"><div class="eyebrow">Knowledge database</div><h2>Your subjects. Your mission.</h2><p>Choose a subject to open its own resource page, then select your class level or entrance pathway.</p></div>
+<div class="cards">
+<button class="card" onclick="chooseSubject('Physics')"><div class="subject-icon">⚛️</div><h3>Physics</h3><p>Class 10, Plus One, Plus Two and entrance preparation.</p><span class="link-label">Open Physics →</span></button>
+<button class="card" onclick="chooseSubject('Chemistry')"><div class="subject-icon">🧪</div><h3>Chemistry</h3><p>Class 10, Plus One, Plus Two and entrance preparation.</p><span class="link-label">Open Chemistry →</span></button>
+<button class="card" onclick="chooseSubject('Mathematics')"><div class="subject-icon">∑</div><h3>Mathematics</h3><p>Class 10, Plus One, Plus Two and entrance preparation.</p><span class="link-label">Open Mathematics →</span></button>
+</div>
+</div>
+</section>
+
+<section class="view content" id="subjects">
+<div class="crumb"><button onclick="showPage('home')">Home</button><span>›</span><span>Explore Resources</span></div>
+<div class="section-heading"><div class="eyebrow">Resource centre</div><h2>Choose a subject</h2><p>Tap Physics, Chemistry or Mathematics to open a separate in-site page with class and entrance options.</p></div>
+<div class="cards">
+<button class="card" onclick="chooseSubject('Physics')"><div class="subject-icon">⚛️</div><h3>Physics</h3><p>School and entrance exam resources.</p><span class="link-label">Explore Physics ↗</span></button>
+<button class="card" onclick="chooseSubject('Chemistry')"><div class="subject-icon">🧪</div><h3>Chemistry</h3><p>School and entrance exam resources.</p><span class="link-label">Explore Chemistry ↗</span></button>
+<button class="card" onclick="chooseSubject('Mathematics')"><div class="subject-icon">∑</div><h3>Mathematics</h3><p>School and entrance exam resources.</p><span class="link-label">Explore Mathematics ↗</span></button>
+</div>
+</section>
+
+<section class="view content" id="levels">
+<div class="crumb"><button onclick="showPage('home')">Home</button><span>›</span><button onclick="showPage('subjects')">Subjects</button><span>›</span><span id="subjectCrumb">Subject</span></div>
+<div class="section-heading"><div class="eyebrow">Choose your pathway</div><h2 id="levelsTitle">Physics resources</h2><p>Every subject has the same four separate pathways.</p></div>
+<div class="cards">
+<button class="card" onclick="openLevel('Class 10')"><div class="subject-icon">🎒</div><h3>Class 10</h3><p>School-level concepts, notes and practice.</p><span class="link-label">Open Class 10 →</span></button>
+<button class="card" onclick="openLevel('Plus One')"><div class="subject-icon">📘</div><h3>Plus One (+1)</h3><p>Chapter notes, key concepts and questions.</p><span class="link-label">Open Plus One →</span></button>
+<button class="card" onclick="openLevel('Plus Two')"><div class="subject-icon">📙</div><h3>Plus Two (+2)</h3><p>Revision, chapters and exam practice.</p><span class="link-label">Open Plus Two →</span></button>
+<button class="card" onclick="openLevel('Entrance Exams')"><div class="subject-icon">🚀</div><h3>Entrance Exams</h3><p>JEE, KEAM, CUET and other relevant exams. NEET is omitted in this version.</p><span class="link-label">Open Entrance Exams →</span></button>
+</div>
+<div class="info-panel" style="margin-top:18px"><p><strong>Entrance options:</strong> <span class="tag">JEE</span><span class="tag">KEAM</span><span class="tag">CUET</span><span class="tag">Other exams</span></p></div>
+</section>
+
+<section class="view content" id="levelDetail">
+<div class="crumb"><button onclick="showPage('home')">Home</button><span>›</span><button onclick="showPage('subjects')">Subjects</button><span>›</span><button onclick="showPage('levels')">Pathways</button><span>›</span><span id="detailCrumb">Details</span></div>
+<div class="section-heading"><div class="eyebrow">Study space</div><h2 id="detailTitle">Physics — Class 10</h2><p id="detailDescription">Your selected learning pathway.</p></div>
+<div class="resource-list" id="detailResources"></div>
+<div class="info-panel" style="margin-top:18px"><p><strong>Note:</strong> These are starter sections. Add real notes, chapter links, question papers and tests when available; this template does not pretend that materials have already been uploaded.</p></div>
+<button class="btn btn-secondary" style="margin-top:18px" onclick="showPage('levels')">← Back to pathways</button>
+</section>
+
+<section class="view content" id="about">
+<div class="section-heading"><div class="eyebrow">The mission</div><h2>Knowledge should move everyone forward.</h2><p>JARVIS is being built to make learning resources easier to discover through clear subject and level sections.</p></div>
+<div class="info-panel"><h3>JARVIS — Your Intelligence. Your Advantage.</h3><p>Built for curious minds. Designed for ambitious learners. Please verify syllabus details and exam requirements using official sources.</p></div>
+</section>
+</main>
+
+<footer>
+<strong>JARVIS</strong> · Your Intelligence. Your Advantage.
+<p>With gratitude to everyone whose knowledge, encouragement and support help us learn, improve and create something meaningful.</p>
+<p>May we use intelligence and technology responsibly to help learners reach useful knowledge.</p>
+<div class="ceo">Yadu Krishna C.K. · Founder &amp; CEO, JARVIS</div>
+<p>Independent educational project. Not affiliated with Marvel.</p>
+<p>© <span id="year"></span> JARVIS Learning Project</p>
+</footer>
+
+<script>
+let currentSubject = "Physics";
+let currentLevel = "Class 10";
+
+function showPage(pageId) {
+  document.querySelectorAll(".view").forEach(section => section.classList.remove("active"));
+  const page = document.getElementById(pageId);
+  if (page) page.classList.add("active");
+  const pageTitles = {
+    home: "JARVIS | Your Intelligence. Your Advantage.",
+    subjects: "Explore Resources | JARVIS",
+    levels: currentSubject + " Resources | JARVIS",
+    levelDetail: currentSubject + " — " + currentLevel + " | JARVIS",
+    about: "About JARVIS | Learning Hub"
+  };
+  document.title = pageTitles[pageId] || "JARVIS | Learning Hub";
+  const descriptions = {
+    home: "JARVIS learning hub for school and entrance-exam resources.",
+    subjects: "Choose Physics, Chemistry or Mathematics learning resources.",
+    levels: currentSubject + " resources for Class 10, Plus One, Plus Two and entrance exams.",
+    levelDetail: currentSubject + " learning pathway: " + currentLevel + ".",
+    about: "About the JARVIS learning project."
+  };
+  const meta = document.querySelector('meta[name="description"]');
+  if (meta) meta.setAttribute("content", descriptions[pageId] || descriptions.home);
+  window.scrollTo({top: 0, behavior: "smooth"});
+  if (location.hash !== "#" + pageId) history.replaceState(null, "", "#" + pageId);
+}
+
+function chooseSubject(subject) {
+  currentSubject = subject;
+  document.getElementById("subjectCrumb").textContent = subject;
+  document.getElementById("levelsTitle").textContent = subject + " resources";
+  showPage("levels");
+}
+
+function openLevel(level) {
+  currentLevel = level;
+  document.getElementById("detailCrumb").textContent = level;
+  document.getElementById("detailTitle").textContent = currentSubject + " — " + level;
+  document.getElementById("detailDescription").textContent =
+    level === "Entrance Exams"
+      ? "Entrance preparation options for " + currentSubject + ": JEE, KEAM, CUET and other relevant exams."
+      : "Organise " + currentSubject + " study resources for " + level + ".";
+  const list = document.getElementById("detailResources");
+  if (level === "Entrance Exams") {
+    list.innerHTML = `
+      <article class="resource-item"><h3>JEE</h3><p>Add the relevant ${currentSubject} syllabus, chapter notes, previous-year questions and mock tests.</p></article>
+      <article class="resource-item"><h3>KEAM</h3><p>Add verified syllabus information, practice questions and revision material for ${currentSubject}.</p></article>
+      <article class="resource-item"><h3>CUET</h3><p>Add subject-specific preparation resources and practice material for ${currentSubject}.</p></article>
+      <article class="resource-item"><h3>Other entrance exams</h3><p>Add more exam pathways and verified learning links when needed.</p></article>`;
+  } else {
+    list.innerHTML = `
+      <article class="resource-item"><h3>Chapter notes</h3><p>Add ${currentSubject} notes for ${level} here.</p></article>
+      <article class="resource-item"><h3>Key concepts and formulas</h3><p>Add a checked summary or formula sheet here.</p></article>
+      <article class="resource-item"><h3>Practice questions</h3><p>Add chapter-wise questions, answer keys or tests here.</p></article>`;
+  }
+  showPage("levelDetail");
+}
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
